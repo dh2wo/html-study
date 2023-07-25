@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P.143-->
+    <title>재귀 함수 호출</title>
+    <script>
+      let num = 0;
+      function testFnc() {
+        num++;
+        document.write(num, "<br>");
+        if (num == 10) return; //num이 10이면 종료
+
+        testFnc();
+      }
+      testFnc();
+    </script>
+  </head>
+  <body></body>
+</html>

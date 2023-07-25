@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P.138 -->
+    <title>매개변수 없이 함수에 전달된 값 받아오기</title>
+    <script>
+      function sum() {
+        let sum = 0;
+
+        for (i in arguments) {
+          sum += arguments[i];
+        }
+        document.write(sum);
+      }
+
+      sum(10, 20, 30);
+    </script>
+  </head>
+  <body></body>
+</html>

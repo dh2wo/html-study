@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 연습</title>
+  </head>
+  <body>
+    <h1>폼 연습</h1>
+    <!-- autocomplete : 자동 완성 -->
+    <form method="get" autocomplete="off">
+      <br />
+      <!-- readonly : 사용자가 내용 입력X -->
+      고유번호<input type="text" value="입력X" readonly /><br />
+      <!-- label : 텍스트를 눌러도 활성화 -->
+      <label for="id">아이디 </label>
+      <!-- required : 필수 필드 지정 -->
+      <input
+        id="id"
+        type="text"
+        size="20"
+        minlength="4"
+        maxlength="10"
+        required
+      />
+      <br />
+      <label
+        >비밀번호
+        <!-- autofocus : 페이지를 열면 바로 입력 -->
+        <input type="password" size="20" maxlength="10" autofocus />
+      </label>
+      <br />
+      <!-- placeholder : 힌트 표시 -->
+      이메일<input type="text" placeholder="123@abc.com" />
+      <br />
+      <input type="reset" value="다시 쓰기" />
+      <input type="submit" value="로그인" />
+    </form>
+  </body>
+</html>

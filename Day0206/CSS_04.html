@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 연습4</title>
+    <style>
+      * {
+        background-color: #000;
+      }
+      /* text-shadow: 가로거리 세로거리 번짐정도 색상 */
+      .shadow1 {
+        color: orange;
+        text-shadow: 1px 1px;
+      }
+      .shadow2 {
+        text-shadow: 5px 5px 3px #f00;
+      }
+      .shadow3 {
+        color: #fff;
+        text-shadow: 7px -7px 5px #000;
+      }
+      .shadow4 {
+        color: #000;
+        text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3,
+          -2px -15px 11px #f80, 2px -19px 181px #f20;
+      }
+      .letter1 {
+        /* 자간 */
+        letter-spacing: 0.5em;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="shadow3">HTML5</h1>
+    <h1 class="shadow4">HTML5</h1>
+
+    <h1 class="letter1">HTML5</h1>
+  </body>
+</html>

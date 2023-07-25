@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P.141-->
+    <title>함수에서 return문2</title>
+    <script>
+      let num = 1;
+      function gallery(direct) {
+        if (direct) {
+          if (num == 8) return;
+          num++;
+        } else {
+          if (num == 1) return;
+          num--;
+        }
+
+        let imgTag = document.getElementById("photo");
+        imgTag.setAttribute("src", "images/pic_" + num + ".png");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="galleryZone">
+      <p><img src="../images/pic_1.png" id="photo" alt="" /></p>
+      <p>
+        <button onclick="gallery(0)">이전</button>
+        <button onclick="gallery(1)">다음</button>
+      </p>
+    </div>
+  </body>
+</html>

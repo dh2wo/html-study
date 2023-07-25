@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 연습5</title>
+    <style>
+      .bullet {
+        /* 채운 사각형으로 불릿 바꾸기 */
+        list-style-type: square;
+      }
+      .nobullet {
+        /* 불릿 없애기 */
+        list-style-type: none;
+      }
+
+      .book1 {
+        list-style-type: decimal-leading-zero;
+      }
+      .book2 {
+        /* list-style-type: upper-roman;
+           list-style-position: inside; */
+        /* 목록 속성 한꺼번에 표시하기 */
+        list-style: upper-roman, inside;
+      }
+
+      .bulletimg {
+        /* 이미지 리스트 */
+        list-style-image: url("../Day0201/image/bullet.png");
+      }
+
+      .inside {
+        /* 목록 들여쓰기 */
+        list-style-position: inside;
+      }
+
+      nav ul li {
+        /* 인라인으로 배치 */
+        display: inline-block;
+        margin: 20px;
+      }
+      span {
+        visibility: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>순서없는 리스트</h1>
+    <ul class="bullet">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+    <ul class="nobullet">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+    <hr />
+
+    <h1>순서있는 리스트</h1>
+    <ol class="book1">
+      <li>Do it! 시리즈</li>
+      <li>된다 시리즈</li>
+      <li>DCM 프로 사진가</li>
+      <li>데이터과학 시리즈</li>
+    </ol>
+    <ol class="book2">
+      <li>Do it! 시리즈</li>
+      <li>된다 시리즈</li>
+      <li>DCM 프로 사진가</li>
+      <li>데이터과학 시리즈</li>
+    </ol>
+    <hr />
+
+    <h1>이미지 리스트</h1>
+    <ul class="bulletimg">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+    <hr />
+
+    <h1>목록 들여쓰기</h1>
+    <ul class="inside">
+      <li>회사소개</li>
+      <li>도서</li>
+      <li>자료실</li>
+      <li>질문답변</li>
+      <li>동영상강의</li>
+    </ul>
+    <hr />
+
+    <h1>인라인으로 배치하기</h1>
+    <nav>
+      <ul>
+        <li><a href="#">종류</a></li>
+        <li><a href="#">입양하기</a></li>
+        <li>
+          <a href="#"><span>건강돌보기</span></a>
+        </li>
+        <li><a href="#">더불어살기</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

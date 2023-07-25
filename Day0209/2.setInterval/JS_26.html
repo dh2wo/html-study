@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일정한 시간 간격으로 코드 실행2</title>
+    <script>
+      let addNum = 0;
+      let auto = setTimeout(function () {
+        addNum++;
+        console.log("addNum: " + addNum);
+      }, 3000); //3초 후에 코드를 한번 실행 후 종료
+    </script>
+  </head>
+  <body></body>
+</html>

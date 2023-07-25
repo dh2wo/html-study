@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <!-- JS 선언 -->
+    <!-- P.57 -->
+    <script>
+      let name = prompt("당신의 이름은?", "");
+      let height = prompt("당신의 신장은?", "0");
+      let weight = prompt("당신의 체중은?", "0");
+      let nomal = (height - 100) * 0.9; //평균 체중
+
+      let result = weight >= nomal - 5 && weight <= nomal + 5; //오차 범위 ± 5
+      result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+
+      document.write("신장: " + height + "cm", "<br>");
+      document.write("체중: " + weight + "kg", "<br>");
+      document.write("적정 체중: " + nomal + "kg", "<br>");
+      document.write(name + "님은 " + result);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* Code Here */
+body {
+  width: 850px;
+  height: auto;
+  align-items: center;
+}
+h2.title {
+  text-align: center;
+}
+input:hover {
+  background-color: red;
+  opacity: 0.5; /* 투명도 */
+}
+table {
+  width: 800px;
+  padding: 10px;
+  border-spacing: 0;
+  border: 1px dotted gray;
+}
+textarea {
+  width: 770px;
+  height: 100px;
+}
+td:focus {
+  background-color: green;
+}

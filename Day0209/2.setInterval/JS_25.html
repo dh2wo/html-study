@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일정한 시간 간격으로 코드 실행</title>
+
+    <script>
+      let addNum = 0;
+      let subNum = 1000;
+
+      let auto_1 = setInterval(function () {
+        addNum++;
+        console.log("addNum: " + addNum);
+      }, 3000); //3초 간격으로 addNum 1씩 증가
+
+      let auto_2 = setInterval(function () {
+        subNum--;
+        console.log("subNum: " + subNum);
+      }, 3000); //3초 간격으로 addNum 1씩 감소
+    </script>
+  </head>
+  <body>
+    <button onclick="clearInterval(auto_1)">증가 정지</button>
+    <button onclick="clearInterval(auto_2)">감소 정지</button>
+  </body>
+</html>

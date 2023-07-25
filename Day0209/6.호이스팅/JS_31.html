@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P.133 -->
+    <title>함수</title>
+    <script>
+      let count = 0;
+
+      myFnc();
+
+      //호이스팅
+
+      //일반함수
+      function myFnc() {
+        count++;
+        document.write("hello" + count, "<br>");
+      }
+
+      myFnc();
+
+      //익명함수
+      // 익명 함수는 선언부만 호이스팅되며 호출의 위치와 구현의 위치간에 순서가 알맞아야 하고, 한번만 사용하는 기능에 사용된다.
+      // 예시:
+      // function() {
+      // console.log("hello!");
+      //  }
+
+      // theFnc();
+      // 익명함수는 호이스팅X
+
+      let theFnc = function () {
+        count++;
+        document.write("bye" + count, "<br>");
+      };
+
+      theFnc();
+    </script>
+  </head>
+  <body></body>
+</html>

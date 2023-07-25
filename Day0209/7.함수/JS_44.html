@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P.155-->
+    <title>도전 미션2</title>
+    <script>
+      function TestScore(name, kor, eng, mat) {
+        this.userName = name;
+        this.korNum = kor;
+        this.engNum = eng;
+        this.matNum = mat;
+
+        //this.getTestInfo() -> 프로토타입으로
+        TestScore.prototype.getTestInfo = function () {
+          document.write("이름: " + this.userName, "<br>");
+          document.write("국어: " + this.korNum, "<br>");
+          document.write("영어: " + this.engNum, "<br>");
+          document.write("수학: " + this.matNum, "<br>");
+        };
+        //this.getAvg() -> 프로토타입으로
+        TestScore.prototype.getAvg = function () {
+          return (this.korNum + this.engNum + this.matNum) / 3;
+        };
+      }
+
+      let kimgun = new TestScore("김군", 80, 80, 68);
+      let ohgun = new TestScore("오군", 100, 80, 72);
+
+      // (디자인패턴, 네이밍 컨벤션)
+
+      console.log(kimgun);
+      console.log(ohgun);
+
+      kimgun.getTestInfo();
+      document.write("평균 점수: " + kimgun.getAvg(), "<br><br>");
+      ohgun.getTestInfo();
+      document.write("평균 점수: " + ohgun.getAvg(), "<br><br>");
+    </script>
+  </head>
+  <body></body>
+</html>

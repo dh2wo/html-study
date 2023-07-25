@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date 객체</title>
+    <!-- JS 선언 -->
+    <script>
+      let today = new Date();
+      let nowMonth = today.getMonth() + 1; //현재 월-1
+      let nowDate = today.getDate();
+      let nowDay = today.getDay();
+
+      document.write("<h1>오늘 날짜 정보</h1>");
+      document.write("현재 월: " + nowMonth, "<br>");
+      document.write("현재 일: " + nowDate, "<br>");
+      document.write("현재 요일: " + nowDay, "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

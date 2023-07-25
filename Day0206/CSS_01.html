@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      h2 {
+        font-size: 20px;
+        color: orange;
+      }
+      .bluetext {
+        color: blue;
+      }
+      p.bluetext {
+        font-family: 돋움;
+      }
+      .redtext {
+        color: red;
+      }
+      .boldtext {
+        font-weight: bold;
+      }
+      /* #id 선택자 : 문서 안에서 한번만 적용 */
+      #id {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 연습</h1>
+    <!-- id 선택자 -->
+    <h2 id="id">웹 문서의 디자인과 내용을 분리합니다</h2>
+    <p>
+      웹 표준에 의한 웹 문서는
+      <span class="redtext boldtext">디자인과 내용이 분리</span>되어 있습니다.
+    </p>
+    <p class="bluetext">
+      내용은 HTML을 이용해 구성하고 디자인은 CSS를 이용해 꾸미는 것입니다.
+    </p>
+    <h2 class="bluetext">h2태그의 요소입니다.</h2>
+  </body>
+</html>

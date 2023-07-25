@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열 객체</title>
+    <!-- JS 선언 -->
+    <script>
+      let d = new Array();
+      d[0] = 30;
+      d[1] = "따르릉";
+      d[2] = true;
+
+      d = new Array(30, "따르릉", true);
+
+      d = [30, "따르릉", true];
+
+      document.write("<h3>배열값 가져오기 - 1</h3>");
+      document.write(d[0], "<br>");
+      document.write(d[1], "<br>");
+      document.write(d[2], "<br>");
+      document.write("<hr>");
+
+      document.write("<h3>배열값 가져오기 - 2</h3>");
+      for (let i = 0; i < d.length; i++) {
+        document.write(d[i], "<br>");
+      }
+      document.write("<hr>");
+
+      document.write("<h3>배열값 가져오기 - 3</h3>");
+      //JAVA: for(int i : d)
+      for (i in d) {
+        document.write(d[i], "<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

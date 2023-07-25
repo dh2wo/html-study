@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <!-- JS 선언 -->
+    <!-- P.58 -->
+    <script>
+      let sold = prompt("4분기 판매량?");
+
+      let avg = (1200 + 1300 + 1000) / 3;
+      result =
+        sold >= avg ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+      document.write(result);
+
+      let str = "<table border = 1 width=200>";
+      str += "<tr><td></td><td>판매량</td></tr>";
+      str += "<tr><td>1분기</td><td>1,200</td>";
+      str += "<tr><td>2분기</td><td>1,300</td>";
+      str += "<tr><td>3분기</td><td>1,000</td>";
+      str += "<tr><td>4분기</td><td>" + sold + "</td>";
+      document.write(str);
+    </script>
+  </head>
+  <body></body>
+</html>

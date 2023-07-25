@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyProfile</title>
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- span : inline(그 부분만), 개행X -->
+    <!-- div : block, 개행 -->
+    <div id="container">
+      <!-- 이미지 -->
+      <img
+        src="Day0201/image/dog.jpg"
+        width="300"
+        height="400"
+        alt="강아지 사진"
+      />
+
+      <!-- 메뉴 -->
+      <!-- 앵커 -->
+      <ul>
+        <li><a href="#menu1">Who am I?</a></li>
+        <li><a href="#menu2">Experience</a></li>
+        <li><a href="#menu3">Education</a></li>
+        <li><a href="#menu4">SNS</a></li>
+      </ul>
+
+      <!-- 자기소개 -->
+      <section>
+        <h2 id="menu1">Who am I?</h2>
+        <p>
+          <mark>JAVA</mark>와 <mark>벡엔드</mark>에 관심을 가지고 있습니다.
+          <br />현재 <b>빅데이터 융합서비스 엔지니어</b> 양성 과정을 통해
+          <u>공부</u>하고 있습니다.
+        </p>
+      </section>
+      <hr />
+
+      <!-- 경력 -->
+      <h2 id="menu2">Experience</h2>
+      <ul>
+        <li>
+          벡엔드 개발
+          <ul>
+            <li style="color: blue">Java</li>
+            <li>Python</li>
+            <li>C</li>
+          </ul>
+        </li>
+        <li>
+          프론트엔드 개발
+          <ul>
+            <li style="color: blue">HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <!-- 학력 -->
+      <h2 id="menu3">Education</h2>
+      <table>
+        <caption>
+          학력 사항
+        </caption>
+        <thead>
+          <tr>
+            <th>출신학교</th>
+            <th>전공</th>
+            <th>기간</th>
+            <th>구분</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A대학교</td>
+            <td>소프트웨어</td>
+            <td>2016.3 ~ 2023.2</td>
+            <td>졸업예정</td>
+          </tr>
+          <tr>
+            <td>B고등학교</td>
+            <td>-</td>
+            <td>2013.3` ~ 2016.2</td>
+            <td>졸업</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+
+      <!-- SNS 링크 -->
+      <h2 id="menu4">SNS</h2>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">인스타그램</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">페이스북</a>
+        </li>
+        <li><a href="https://www.youtube.com/" target="_blank">유튜브</a></li>
+      </ul>
+    </div>
+    <hr />
+
+    <p class="lorem">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+      facilis, quia veritatis exercitationem quam eum magnam est perspiciatis
+      quaerat repellendus ipsam odio! Similique, laboriosam molestias? Dolor
+      nobis nam cum?
+    </p>
+  </body>
+</html>
